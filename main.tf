@@ -6,7 +6,7 @@ region = "ap-southeast-1"
 resource "aws_instance" "one" {
   ami             = "ami-01dca6b685b1c23b7"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "madhuabc"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
   user_data       = <<EOF
@@ -25,7 +25,7 @@ EOF
 resource "aws_instance" "two" {
   ami             = "ami-01dca6b685b1c23b7"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "madhuabc"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   user_data       = <<EOF
@@ -44,7 +44,7 @@ EOF
 resource "aws_instance" "three" {
   ami             = "ami-01dca6b685b1c23b7"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "madhuabc"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
   tags = {
@@ -55,7 +55,7 @@ resource "aws_instance" "three" {
 resource "aws_instance" "four" {
   ami             = "ami-01dca6b685b1c23b7"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "madhuabc"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   tags = {
@@ -88,7 +88,7 @@ resource "aws_security_group" "five" {
 }
 
 resource "aws_s3_bucket" "six" {
-  bucket = "devopsbyrahamterraserverbucket9988oo9988"
+  bucket = "madhu096"
 }
 
 resource "aws_iam_user" "seven" {
